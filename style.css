@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: .3s;
+}
+
+.guessNum {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+h2 {
+    margin: 40px 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+#num1 {
+    display: block;
+    outline: none;
+}
+#num1 {
+    display: block;
+    width: 250px;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    width: 250px;
+    height: 50px;
+    padding: 15px;
+    font-size: 24px;
+}
+#btn1 {
+    margin-top: 20px;
+    background-color: blue;
+    color: white;  
+    border: 1px solid blue;
+    border-radius: 15px;
+    width: 250px;
+    height: 50px; 
+    font-weight: 600px;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+#btn1:active {
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+}
+.btn2 {
+    margin-top: 20px;
+    background-color: blue;
+    color: white;  
+    border: 1px solid blue;
+    border-radius: 15px;
+    width: 50px;
+    height: 50px; 
+    font-weight: 600px;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.calc {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.calcInput {
+    margin-bottom: 20px;
+}
+.num {
+    width: 200px;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    width: 105px;
+    height: 50px;
+    padding: 15px;
+    font-size: 24px;
+}
+.btn2:active {
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+}
+.operatorGuessr {
+    margin: 100px 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input input {
+    outline: none;
+    width: 250px;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    width: 300px;
+    height: 50px;
+    padding: 15px;
+    font-size: 24px;
+}
+#code {
+    width: 100px;
+}
+.input span {
+    font-size: 24px;
+}
+.operatorGuessr button {
+    margin: 30px 0;
+    width: 200px;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    width: 200px;
+    height: 100px;
+    padding: 15px;
+    font-size: 24px;
+    background-color: blue;
+    color: white;
+}
+.operatorGuessr button:hover {
+    border-radius: 12px
+}
+.operatorGuessr button:active {
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+    border-radius: 15px
+}
+.operatorGuessr p {
+    font-size: 20px;
+    font-weight: bold;
+    
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="guessNum">
+        <h2>Угадай число</h2>
+        <input type="number" id="num1">
+        <button id="btn1">Угадай</button>
+        <p id="randomResult"></p>
+    </div>
+    <div class="calc">
+        <h2>Калькулятор</h2>
+        <div class="calcInput">
+            <input class="num" type="number">
+            <input class="num" type="number">
+        </div>
+        <div class="calcBtn">
+            <button class="btn2" >+</button>
+            <button class="btn2">-</button>
+            <button class="btn2">*</button>
+            <button class="btn2">/</button>
+        </div>
+        <p id="calcResult"></p>
+    </div>
+    <div class="operatorGuessr">
+        <h2>Введите номер моб. телефона:</h2>
+        <div class="input">
+            <span>+998</span>
+            <input type="number" placeholder="Код" id="code">
+            <input type="number" placeholder="Номер типа 000-00-00">
+        </div>
+        <button onclick="guessOperator()">Определить оператора</button>
+        <p id="operatorName"></p>
+    </div>
+    <script src="./sctipt.js"></script>
+</body>
+</html>
