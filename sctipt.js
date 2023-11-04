@@ -54,7 +54,4 @@ function guessOperator() {
     if(code==99 || code==77) {
         document.getElementById("operatorName").innerHTML = `Ваш оператор: Uzmobile GSM`
     }
-    else {
-        document.getElementById("operatorName").innerHTML = `Невозможно найти оператора. Проверьте правильность префикса`
-    }
 }
