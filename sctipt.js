@@ -12,6 +12,7 @@ function random() {
     else {
         document.getElementById("randomResult").innerHTML = "Вы не угадали :("
     }
+    document.getElementById("num1").value = " "
 }
 
 let plus1 = document.querySelectorAll(".btn2")[0]
@@ -54,4 +55,48 @@ function guessOperator() {
     if(code==99 || code==77) {
         document.getElementById("operatorName").innerHTML = `Ваш оператор: Uzmobile GSM`
     }
+}
+
+// let addStudentBtn = document.querySelector(`#addStudentBtn`)
+
+// addStudentBtn.addEventListener("click", addStudent)
+
+let students = []
+
+
+function addStudent() {
+    let studentSurname = document.getElementById("surname").value
+    let studentName = document.getElementById("name").value
+    let studentAge = document.getElementById("age").value
+    let student = []
+
+    student.push(studentSurname)
+    student.push(studentName)
+    student.push(studentAge)
+
+    students.push(student)
+
+    document.getElementById("surname").value = ""
+    document.getElementById("name").value = ""
+    document.getElementById("age").value = ""
+    showStudent()
+}
+
+function showStudent() {
+    let groupList = document.querySelector(`.groupList`)
+    groupList.innerHTML = ""
+    
+    for(let i = 0; i < students.length; i++)
+    {
+        let groupElem = 
+        `<div class="groupElem">
+            ${i+1}. ${students[i]}
+            <button class="delete" onclick="deleteStudent()">-</button>
+        </div>`
+        groupList.innerHTML = groupList.innerHTML + groupElem
+    }
+}
+
+function deleteStudent() {
+    students.pop()
 }
