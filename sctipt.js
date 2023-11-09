@@ -95,3 +95,27 @@ function showStudent() {
         groupList.innerHTML = groupList.innerHTML + groupElem
     }
 }
+
+let info = {
+    "Фамилия": "Темурмаликов", 
+    "Имя": "Шахзодбек", 
+    "Очество": "Темурмаликович",
+    "Возраст": 14, 
+    "Курс": "FrontEnd", 
+    "Поток": 45,
+    "Пол": "Ламинат", 
+    "Номер тел.": 998909730654, 
+    "Адресс": "г.Ташкент, Сереглийский р-н, массив Строителей, ул.Строителей, дом 8Б"
+}
+
+console.log(info)
+
+let infoList = document.getElementById("myInfo")
+
+let keys = Object.keys(info)
+for(let i = 0; i < keys.length; i++){
+    let key = keys[i]
+    let value = info[key]
+    let line = `<div>${key}: ${value}</div>`
+    infoList.innerHTML += line
+}

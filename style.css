@@ -179,10 +179,6 @@ h2 {
     margin: 20px auto;
     font-size: 24px;
 }
-.delete {
-    width: 25px;
-    height: 25px;
-}
 .counter {
     display: flex;
     flex-direction: column;
