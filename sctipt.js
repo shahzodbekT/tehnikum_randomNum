@@ -91,12 +91,7 @@ function showStudent() {
         let groupElem = 
         `<div class="groupElem">
             ${i+1}. ${students[i]}
-            <button class="delete" onclick="deleteStudent()">-</button>
         </div>`
         groupList.innerHTML = groupList.innerHTML + groupElem
     }
-}
-
-function deleteStudent() {
-    students.pop()
 }

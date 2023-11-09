@@ -183,3 +183,10 @@ h2 {
     width: 25px;
     height: 25px;
 }
+.counter {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    align-items: center;
+    margin-bottom: 100px;  
+}
