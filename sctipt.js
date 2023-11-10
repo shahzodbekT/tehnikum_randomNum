@@ -68,13 +68,17 @@ function addStudent() {
     let studentSurname = document.getElementById("surname").value
     let studentName = document.getElementById("name").value
     let studentAge = document.getElementById("age").value
-    let student = []
+    let student = {
+        surname: 'surname',
+        name: 'name',
+        age: 0
+    }
 
-    student.push(studentSurname)
-    student.push(studentName)
-    student.push(studentAge)
+    student.surname = studentSurname
+    student.name = studentName
+    student.age = studentAge
 
-    students.push(student)
+    students.push(Object.values(student))
 
     document.getElementById("surname").value = ""
     document.getElementById("name").value = ""
